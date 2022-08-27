@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="./style.css" rel="stylesheet">
+  <title>Exercício 38</title>
+</head>
+<body>
+
+  <header>
+    <img class="logo" src="./src/img/logo.svg" alt="Logo ">
+    <h1>Conversor de Moedas</h1>
+  </header>
+
+  <div class="container d-flex justify-content-center">
+    <div class="conversion-container px-2">
+      <div data-js="currencies-container" class="currencies-container mb-4 mt-4">
+        <div class="col-4 col-sm-5 p-0">
+          <label for="currency-one">Busque a moeda</label>
+          <select data-js="currency-one" class="currency-one form-select" id="currency-one">            
+          </select>
+        </div>
+        <img class="arrow col-1 col-sm-2 col-lg-1" src="./src/img/arrow-right.svg" alt="Seta apontando para direita">
+        <div class="col-4 col-sm-5 p-0">
+          <label for="currency-two">Busque a moeda</label>
+          <select data-js="currency-two" class="form-select currency-two">            
+          </select>
+        </div>
+      </div>
+  
+      <div class="row calc-value-container mb-5 mt-4">
+        <div class="col-6 col-md-4 flex-wrap">
+          <label for="currency-times">Digite valor a ser calculado:</label>
+          <input data-js="currency-one-times" type="number" class="form-control mb-2" id="currency-times" value="1" min="1">
+        </div>
+        
+        <div class="col-12 col-md-7 flex-wrap">
+          <p data-js="converted-value" class="converted-value fs-3 m-0"></p>
+        </div>
+  
+      </div>
+      <p class="conversion-precision text-center">
+        <span data-js="conversion-precision" class="fw-bold fs-2 my-4"></span>
+      </p>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

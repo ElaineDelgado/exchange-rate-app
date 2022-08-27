@@ -1,0 +1,66 @@
+body {
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+  color: #002100;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0px;
+}
+
+img.logo {
+  max-width: 150px;
+  display: block;
+}
+
+header h1 {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.conversion-container {
+  padding-top: 3.5rem;
+  background-color: #b0b0b0;
+  border-radius: 10px;
+  max-width: 700px;  
+  width: 100%;
+}
+
+label {
+  font-size: .9rem;
+}
+
+.currencies-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.arrow {
+  width: 40px;
+  display: block;
+}
+
+.calc-value-container {
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: #b0b0b0;
+  }
+  .arrow {
+      width: 35px;
+    }
+    .converted-value {
+      text-align: center;
+    }
+}
