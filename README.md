@@ -28,7 +28,7 @@ O projeto foi desenvolvido durante treinamento CJRM de JavaScript.
 ## :sparkles: Funcionalidades:
 
 :heavy_check_mark: Converte taxa de câmbio;\
-:heavy_check_mark: Calcula valor convertido;\
+:heavy_check_mark: Calcula valor convertido;
 
 ## :rocket: Tecnologias
 
