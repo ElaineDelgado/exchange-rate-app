@@ -86,7 +86,8 @@ const fetchExchangeRate = async (url) => {
   }
 }
 
-const getOptions = (selectedCurrency, conversion_rates) => {
+
+const getOptionsFn = (conversion_rates) => ({selectedCurrency}) => {
   const setSelectedAttribute = currency => currency === selectedCurrency ? 'selected' : '' 
   const getOptionsArray = (currency) =>
     `<option ${setSelectedAttribute(currency)}>${currency}</option>`
@@ -113,19 +114,22 @@ const showUpdatedRates = ({ conversion_rates }) => {
 }
 
 const showInitialInfo = ({ conversion_rates }) => {
-  currencyOneEl.innerHTML = getOptions('USD', conversion_rates)
-  currencyTwoEl.innerHTML = getOptions('BRL', conversion_rates)
+  const getOptions = getOptionsFn(conversion_rates)
+
+  currencyOneEl.innerHTML = getOptions({ selectedCurrency: 'USD' })
+  currencyTwoEl.innerHTML = getOptions({ selectedCurrency: 'BRL' })
 
   showUpdatedRates({conversion_rates})  
 }
 
 const init = async () => {
   const url = getUrl('USD')
-  const exchangeRate = (await fetchExchangeRate(url))
+  const exchangeRate = await fetchExchangeRate(url)
   
-  if (exchangeRate && exchangeRate.conversion_rates) {
-    showInitialInfo(exchangeRate)
+  if (!exchangeRate || !exchangeRate.conversion_rates) {
+    return
   }
+  showInitialInfo(exchangeRate)
 }
 
 const handleTimesCurrencyElInput = () => {
