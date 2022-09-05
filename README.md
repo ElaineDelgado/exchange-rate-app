@@ -8,37 +8,29 @@
 
 <h1 align="center">App Conversor Moedas</h1>
 
-Status
-
-<h4 align="center"> 
-	🚧  README.md Under construction...  🚧
-</h4>
-
 <hr>
 
 <p align="center">
-  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
-  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#dart-about">Sobre</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">Funcionalidades</a> &#xa0; | &#xa0;
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
-  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
-  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
-  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Inicializando</a> &#xa0; | &#xa0;
   <a href="https://github.com/ElaineDelgado" target="_blank">Author</a>
 </p>
 
 <br>
 
-## :dart: About
+## :dart: Sobre
 
-Describe your project
+Coversor de moedas com campo para calcular determinada quantia. 
+O projeto foi desenvolvido durante treinamento CJRM de JavaScript.
 
-## :sparkles: Features
+## :sparkles: Funcionalidades:
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: Converte taxa de câmbio;\
+:heavy_check_mark: Calcula valor convertido;\
 
-## :rocket: Technologies
+## :rocket: Tecnologias
 
 The following tools were used in this project:
 
@@ -48,34 +40,13 @@ The following tools were used in this project:
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-## :white_check_mark: Requirements
+## :white_check_mark: Inicializando
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+Clone este projeto e para rodá-lo abra o arquivo index.html no seu navegador.
 
-## :checkered_flag: Starting
 
-```bash
-# Clone this project
-$ git clone https://github.com/ElaineDelgado/app-conversor-moedas
-
-# Access
-$ cd app-conversor-moedas
-
-# Install dependencies
-$ yarn
-
-# Run the project
-$ yarn start
-
-# The server will initialize in the <http://localhost:3000>
-```
-
-## :memo: License
-
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
-
-Made with :heart: by <a href="https://github.com/ElaineDelgado" target="_blank">Elaine Delgado</a>
+Feito com :heart: por <a href="https://github.com/ElaineDelgado" target="_blank">Elaine Delgado</a>
 
 &#xa0;
 
-<a href="#top">Back to top</a>
+<a href="#top">Voltar para o topo</a>
