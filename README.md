@@ -34,11 +34,10 @@ O projeto foi desenvolvido durante treinamento CJRM de JavaScript.
 
 The following tools were used in this project:
 
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+- JavaScript
+- HTML
+- CSS
+- API: ExchangeRate-API https://v6.exchangerate-api.com
 
 ## :white_check_mark: Inicializando
 
